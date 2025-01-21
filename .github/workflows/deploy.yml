@@ -3,7 +3,7 @@ name: Deploy React App to cPanel
 on:
   push:
     branches:
-      - main  # Trigger the workflow on pushes to the main branch
+      - main  # Trigger workflow on pushes to the main branch
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       # Step 5: Deploy the build to cPanel
-      - name: Deploy to cPanel
+      - name: Deploy to cPanel via FTP
         run: |
           sudo apt-get update
           sudo apt-get install -y lftp
@@ -39,6 +39,11 @@ jobs:
           quit
           "
         env:
-          CPANEL_USER: ${{ secrets.CPANEL_USER }}       # cPanel username stored as a secret
-          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }} # cPanel password stored as a secret
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}       # cPanel host stored as a secret
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}       # cPanel username
+          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }} # cPanel password
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}       # cPanel host
+
+      # Optional: Notify on successful deployment
+      - name: Notify success
+        if: success()
+        run: echo "Deployment to cPanel was successful!"
