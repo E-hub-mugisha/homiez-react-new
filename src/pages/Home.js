@@ -108,35 +108,35 @@ const Home = () => {
 
       <Clients />
 
-      <section class="position-relative mt-n5 mt-lg-0 mt-4">
-        <div class="bg-secondary position-absolute bottom-0 start-0 w-100" style={{ height: 'calc(100% - 3rem)' }}></div>
-        <div class="container position-relative z-2">
-          <div class="row">
-            <div class="col-lg-6 py-5 mb-sm-2 mb-md-3 mb-lg-5 mt-3 mt-sm-4 mt-md-5">
-              <h2 class="h1 text-center text-lg-start pt-3 mt-3 mb-4">Work with a passionate team</h2>
-              <div class="d-flex justify-content-between mx-auto mx-lg-0" style={{ maxWidth: '370px' }}>
-                <ul class="ps-4 me-3">
-                  <li class="mt-2">Videographer</li>
-                  <li class="mt-2">Photographer</li>
-                  <li class="mt-2"></li>
+      <section className="position-relative mt-n5 mt-lg-0 mt-4">
+        <div className="bg-secondary position-absolute bottom-0 start-0 w-100" style={{ height: 'calc(100% - 3rem)' }}></div>
+        <div className="container position-relative z-2">
+          <div className="row">
+            <div className="col-lg-6 py-5 mb-sm-2 mb-md-3 mb-lg-5 mt-3 mt-sm-4 mt-md-5">
+              <h2 className="h1 text-center text-lg-start pt-3 mt-3 mb-4">Work with a passionate team</h2>
+              <div className="d-flex justify-content-between mx-auto mx-lg-0" style={{ maxWidth: '370px' }}>
+                <ul className="ps-4 me-3">
+                  <li className="mt-2">Videographer</li>
+                  <li className="mt-2">Photographer</li>
+                  <li className="mt-2"></li>
                 </ul>
-                <ul class="ps-4">
-                  <li class="mt-2">Web Developer</li>
-                  <li class="mt-2">IT Support Specialist</li>
+                <ul className="ps-4">
+                  <li className="mt-2">Web Developer</li>
+                  <li className="mt-2">IT Support Specialist</li>
                 </ul>
               </div>
-              <div class="text-center text-lg-start pt-4">
-                <a class="btn btn-outline-dark" href="#">Free consultation</a>
+              <div className="text-center text-lg-start pt-4">
+                <a className="btn btn-outline-dark" href="#">Free consultation</a>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="bg-primary d-flex flex-column align-items-center justify-content-center position-relative h-100 rounded-5 rounded-bottom-0 p-5">
-                <div class="position-relative z-2 py-sm-3 py-md-4" style={{ maxWidth: '360px'}} data-bs-theme="dark">
-                  <h2 class="h1">Let's Bring Your Vision to Life</h2>
-                  <p class="text-body mb-0">Our experts in videography, photography, web development, and IT support are ready to help your business stand out.</p>
-                  <div class="d-flex flex-column flex-sm-row align-items-center pt-3 mt-3 mt-lg-4">
-                    <a class="btn btn-light w-100 w-sm-auto me-sm-4 mb-2 mb-sm-0" to="/contact">Contact Us</a>
-                    <a class="d-inline-block text-white fw-medium p-2" href="mailto:info@homie.rw">info@homie.rw</a>
+            <div className="col-lg-6">
+              <div className="bg-primary d-flex flex-column align-items-center justify-content-center position-relative h-100 rounded-5 rounded-bottom-0 p-5">
+                <div className="position-relative z-2 py-sm-3 py-md-4" style={{ maxWidth: '360px'}} data-bs-theme="dark">
+                  <h2 className="h1">Let's Bring Your Vision to Life</h2>
+                  <p className="text-body mb-0">Our experts in videography, photography, web development, and IT support are ready to help your business stand out.</p>
+                  <div className="d-flex flex-column flex-sm-row align-items-center pt-3 mt-3 mt-lg-4">
+                    <a className="btn btn-light w-100 w-sm-auto me-sm-4 mb-2 mb-sm-0" to="/contact">Contact Us</a>
+                    <a className="d-inline-block text-white fw-medium p-2" href="mailto:info@homie.rw">info@homie.rw</a>
                   </div>
                 </div>
               </div>
