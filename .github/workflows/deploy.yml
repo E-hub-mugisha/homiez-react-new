@@ -39,7 +39,8 @@ jobs:
 
       # Step 6: Build the React app
       - name: Build the React app
-        run: npm run build
+        run: |
+          CI=false npm run build
 
       # Step 7: Deploy to cPanel
       - name: Deploy to cPanel
