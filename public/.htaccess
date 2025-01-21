@@ -1,0 +1,53 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect all traffic to index.html
+    RewriteCond %{REQUEST_URI} !/index\.html$ [NC]
+    RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|js|woff|woff2|ttf|otf|svg|eot)$ [NC]
+    RewriteRule ^.*$ /index.html [R=302,L]
+
+    # Allow access to the index page
+    DirectoryIndex index.html
+</IfModule>
+
+<Files "index.html">
+    # Restrict access to index.html
+    Order Deny,Allow
+    Deny from all
+    Allow from 194.163.180.153  # Replace with your IP address
+
+    # Block any HTTP methods other than GET and HEAD (no POST/PUT/DELETE)
+    <LimitExcept GET HEAD>
+        Deny from all
+    </LimitExcept>
+
+    # Prevent access to index.html (even though it's accessible to view)
+    SetHandler None
+</Files>
+
+# Additional Security Headers
+<IfModule mod_headers.c>
+    # Prevent browser from executing potentially dangerous content
+    Header set X-Content-Type-Options "nosniff"
+    # Prevent clickjacking attacks
+    Header always append X-Frame-Options SAMEORIGIN
+    # Prevent cross-site scripting (XSS) attacks
+    Header set X-XSS-Protection "1; mode=block"
+    # Prevent browsers from caching sensitive content
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</IfModule>
+
+# Prevent access to sensitive files and directories
+<FilesMatch "(^|/)\.(htaccess|htpasswd|git|svn)">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Prevent access to configuration files and backup files
+<FilesMatch "\.(env|ini|bak|backup|old|swp)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

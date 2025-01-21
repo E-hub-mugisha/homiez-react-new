@@ -1,0 +1,44 @@
+name: Deploy React App to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Use the Node.js version your project requires
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Build the React app
+      - name: Build the React app
+        run: npm run build
+
+      # Step 5: Deploy the build to cPanel
+      - name: Deploy to cPanel
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+          lftp -f "
+          open ftp://$CPANEL_USER:$CPANEL_PASSWORD@$CPANEL_HOST
+          mirror -R ./build /public_html
+          quit
+          "
+        env:
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}       # cPanel username stored as a secret
+          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }} # cPanel password stored as a secret
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}       # cPanel host stored as a secret
