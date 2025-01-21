@@ -3,7 +3,7 @@ name: Deploy React App to cPanel
 on:
   push:
     branches:
-      - main  # Trigger workflow on pushes to the main branch
+      - main
 
 jobs:
   build:
@@ -14,22 +14,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js environment
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Use the Node.js version your project requires
+          node-version: '16'
 
-      # Step 3: Install dependencies
+      # Step 3: Cache Node.js modules
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Step 4: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # Step 4: Build the React app
+      # Step 5: Add missing Babel plugin
+      - name: Install missing Babel plugin
+        run: npm install @babel/plugin-proposal-private-property-in-object --save-dev
+
+      # Step 6: Build the React app
       - name: Build the React app
         run: npm run build
 
-      # Step 5: Deploy the build to cPanel
-      - name: Deploy to cPanel via FTP
+      # Step 7: Deploy to cPanel
+      - name: Deploy to cPanel
         run: |
           sudo apt-get update
           sudo apt-get install -y lftp
@@ -39,11 +52,6 @@ jobs:
           quit
           "
         env:
-          CPANEL_USER: ${{ secrets.CPANEL_USER }}       # cPanel username
-          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }} # cPanel password
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}       # cPanel host
-
-      # Optional: Notify on successful deployment
-      - name: Notify success
-        if: success()
-        run: echo "Deployment to cPanel was successful!"
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
