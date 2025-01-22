@@ -42,7 +42,7 @@ const Hero = () => {
                         </div>
                       </div>
                     </div>
-                    <video className="d-block w-100" autoplay loop muted style={{ borderRadius: 'calc(var(--ar-border-radius) * 1.875)' }}>
+                    <video className="d-block w-100" autoPlay loop muted style={{ borderRadius: 'calc(var(--ar-border-radius) * 1.875)' }}>
                       <source src="assets/img/landing/marketing-agency/hero/video.mp4" type="video/mp4" />
                     </video>
                   </div>

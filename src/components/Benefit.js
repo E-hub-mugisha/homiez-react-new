@@ -13,17 +13,17 @@ const Benefit = () => {
 
               <form className="needs-validation row g-4" novalidate="">
                 <div className="col-lg-10">
-                  <label className="form-label fs-base" for="name">Name</label>
+                  <label className="form-label fs-base" htmlFor="name">Name</label>
                   <input className="form-control form-control-lg" type="text" placeholder="Your name" required="" id="name" />
                   <div className="invalid-feedback">Please enter your name!</div>
                 </div>
                 <div className="col-lg-10">
-                  <label className="form-label fs-base" for="email">Email</label>
+                  <label className="form-label fs-base" htmlFor="email">Email</label>
                   <input className="form-control form-control-lg" type="email" placeholder="Email address" required="" id="email" />
                   <div className="invalid-feedback">Please provide a valid email address!</div>
                 </div>
                 <div className="col-lg-10">
-                  <label className="form-label fs-base" for="message">Message</label>
+                  <label className="form-label fs-base" htmlFor="message">Message</label>
                   <textarea className="form-control form-control-lg" placeholder="Your message" rows="4" required="" id="message"></textarea>
                   <div className="invalid-feedback">Please write your message!</div>
                 </div>

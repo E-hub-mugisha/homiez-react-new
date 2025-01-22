@@ -54,7 +54,7 @@ const Webservice = () => {
                     className="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto me-sm-3 me-xl-4 mb-2 mb-sm-0"
                     href="#"
                   >
-                    Let's partner
+                    Let&apos;s partner
                   </a>
                   <a
                     className="btn btn-lg btn-link text-white w-100 w-sm-auto px-2"
@@ -168,7 +168,7 @@ const Webservice = () => {
                     <path className="text-warning" d="..."></path>
                   </svg>
                   <h3>UI/UX Design</h3>
-                  <p className="card-text">Intuitive and user-centered design solutions for your applications.</p>
+                  <p className="card-text">Intuitive and user-centered design solutions htmlFor your applications.</p>
                 </div>
                 <div className="card-footer border-0 px-0 pt-0 pb-4 mb-3">
                   <div className="btn btn-icon btn-outline-primary rounded-circle stretched-link">
@@ -223,7 +223,7 @@ const Webservice = () => {
       {/* <!-- Portfolio --> */}
       <section className="container pt-5 pb-sm-3 mt-2 mt-sm-4 mb-2 mb-md-3 mb-lg-4 mb-xxl-5">
         <h2 className="h1 text-center">Recent case studies</h2>
-        <p className="pb-4 mb-md-2 mb-lg-3 text-center">Below you'll find handpicked recent projects we are most proud of</p>
+        <p className="pb-4 mb-md-2 mb-lg-3 text-center">Below you&apos;ll find handpicked recent projects we are most proud of</p>
 
         {/* <!-- Item --> */}
         <div className="row align-items-center pt-xl-2 pb-5 mb-lg-2 mb-xl-3 mb-xxl-4">
@@ -237,7 +237,7 @@ const Webservice = () => {
             <div className="ps-md-3 ps-lg-0">
               <img className="d-block d-dark-mode-none mb-2 mb-lg-3" src="assets/img/portfolio/brands/champion-blue-dark.svg" alt="Champion" />
               <img className="d-none d-dark-mode-block mb-2 mb-lg-3" src="assets/img/portfolio/brands/champion-blue-light.svg" alt="Champion" />
-              <h2 className="h4">Development of an application for a national bank</h2>
+              <h2 className="h4">Development of an application htmlFor a national bank</h2>
               <p className="fs-sm pb-3 pb-lg-4 mb-3">Morbi et massa fames ac scelerisque sit commodo dignissim faucibus vel quisque proin lectus. Morbi et massa fames ac scelerisque sit commodo dignissim.</p>
               <a className="btn btn-sm btn-outline-dark rounded-pill" href="portfolio-single-v1.html">Read the full story</a>
               <div className="d-flex align-items-center pt-2 pt-lg-3 mt-3">
@@ -262,7 +262,7 @@ const Webservice = () => {
           <div className="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
             <div className="ps-md-3 ps-lg-0">
               <img className="d-block mb-2 mb-lg-3" src="assets/img/portfolio/brands/foster-green.svg" alt="Foster" />
-              <h2 className="h4">Design and development of a dashboard for data management</h2>
+              <h2 className="h4">Design and development of a dashboard htmlFor data management</h2>
               <p className="fs-sm pb-3 pb-lg-4 mb-3">Feugiat elit tempor, malesuada rutrum amet quis duis facilisi viverra. Quam ut in gravida dignissim eget mauris pretium facilisi dui varius amet et quam massa auctor.</p>
               <a className="btn btn-sm btn-outline-dark rounded-pill" href="portfolio-single-v1.html">Read the full story</a>
             </div>
@@ -280,7 +280,7 @@ const Webservice = () => {
           <div className="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
             <div className="ps-md-3 ps-lg-0">
               <img className="d-block mb-2 mb-lg-3" src="assets/img/portfolio/brands/boost.svg" alt="Boost" />
-              <h2 className="h4 mb-lg-4">Landing page for a marketing agency Boost</h2>
+              <h2 className="h4 mb-lg-4">Landing page htmlFor a marketing agency Boost</h2>
               <ul className="list-unstyled pb-1 pb-lg-2 mb-3">
                 <li className="d-flex pb-1 mb-2">
                   <i className="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
@@ -313,19 +313,19 @@ const Webservice = () => {
               <h3 className="mb-4">Send us your request!</h3>
 
               {/* <!-- Contact form --> */}
-              <form className="needs-validation row g-4" novalidate>
+              <form className="needs-validation row g-4" noValidate>
                 <div className="col-lg-10">
-                  <label className="form-label fs-base" for="name">Name</label>
+                  <label className="form-label fs-base" htmlFor="name">Name</label>
                   <input className="form-control form-control-lg" type="text" placeholder="Your name" required id="name"/>
                     <div className="invalid-feedback">Please enter your name!</div>
                 </div>
                 <div className="col-lg-10">
-                  <label className="form-label fs-base" for="email">Email</label>
+                  <label className="form-label fs-base" htmlFor="email">Email</label>
                   <input className="form-control form-control-lg" type="email" placeholder="Email address" required id="email"/>
                     <div className="invalid-feedback">Please provide a valid email address!</div>
                 </div>
                 <div className="col-lg-10">
-                  <label className="form-label fs-base" for="message">Message</label>
+                  <label className="form-label fs-base" htmlFor="message">Message</label>
                   <textarea className="form-control form-control-lg" placeholder="Your message" rows="4" required id="message"></textarea>
                   <div className="invalid-feedback">Please write your message!</div>
                 </div>
@@ -364,7 +364,7 @@ const Webservice = () => {
                         <path className="text-warning" d="M36.0001 36.0001V13.3828C23.5089 13.3828 13.3828 23.5089 13.3828 36.0001H36.0001Z" fill="currentColor"></path>
                       </svg>
                       <h3 className="h4" style={{ maxWidth: '180px'}}>Flexible Work Terms</h3>
-                      <p className="card-text fs-sm">We offer flexible work terms, adapting to your schedule for the best collaboration experience.</p>
+                      <p className="card-text fs-sm">We offer flexible work terms, adapting to your schedule htmlFor the best collaboration experience.</p>
                     </div>
                   </div>
                 </div>
@@ -396,7 +396,7 @@ const Webservice = () => {
                         <path className="text-warning" d="M8.96266 18C8.96266 13.0088 13.0088 8.96266 18 8.96266C22.9912 8.96266 27.0373 13.0088 27.0373 18H36C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36V27.0373C13.0088 27.0373 8.96266 22.9912 8.96266 18Z" fill="currentColor"></path>
                       </svg>
                       <h3 className="h4" style={{ maxWidth: '180px'}}>Challenges? We Solve Them</h3>
-                      <p className="card-text fs-sm">Nothing is too difficult for us. We rise to every challenge to bring you the best results.</p>
+                      <p className="card-text fs-sm">Nothing is too difficult htmlFor us. We rise to every challenge to bring you the best results.</p>
                     </div>
                   </div>
                 </div>

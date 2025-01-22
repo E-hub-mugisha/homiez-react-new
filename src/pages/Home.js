@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import ServiceCard from '../components/ServiceCard';
 import Clients from '../components/clients';
 import Benefit from '../components/Benefit';
 import Weare from '../components/Weare';
@@ -88,7 +87,7 @@ const Home = () => {
                     </svg>
                     <h3 className="h4">Web Development & IT Support</h3>
                     <p className="mb-0">
-                      From designing stunning websites to ensuring seamless IT operations, we’re here to support your business's digital growth.
+                      From designing stunning websites to ensuring seamless IT operations, we&apos;re here to support your business&apos;s digital growth.
                     </p>
                   </div>
                   <div className="card-footer border-0 pt-3 mb-3">
@@ -132,7 +131,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="bg-primary d-flex flex-column align-items-center justify-content-center position-relative h-100 rounded-5 rounded-bottom-0 p-5">
                 <div className="position-relative z-2 py-sm-3 py-md-4" style={{ maxWidth: '360px'}} data-bs-theme="dark">
-                  <h2 className="h1">Let's Bring Your Vision to Life</h2>
+                  <h2 className="h1">Let&apos;s Bring Your Vision to Life</h2>
                   <p className="text-body mb-0">Our experts in videography, photography, web development, and IT support are ready to help your business stand out.</p>
                   <div className="d-flex flex-column flex-sm-row align-items-center pt-3 mt-3 mt-lg-4">
                     <a className="btn btn-light w-100 w-sm-auto me-sm-4 mb-2 mb-sm-0" to="/contact">Contact Us</a>

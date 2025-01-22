@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                     <p className="nav fs-sm mb-0">
                         <span className="text-body-secondary">&copy; All rights reserved. Made by</span>
-                        <a className="nav-link d-inline fw-normal p-0 ms-1" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+                        <a className="nav-link d-inline fw-normal p-0 ms-1" href="/">HOMIEZ Team</a>
                     </p>
                 </div>
             </footer>
@@ -59,7 +59,7 @@ const Footer = () => {
             {/*  Back to top button  */}
             <a className="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
                 <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+                    <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10"></circle>
                 </svg>
                 <i className="ai-arrow-up"></i>
             </a>

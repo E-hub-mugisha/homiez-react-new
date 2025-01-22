@@ -11,12 +11,12 @@ const Contact = () => {
                                 <a href="/">Home</a>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
-                                Let's Talk
+                                Let&apos;s Talk
                             </li>
                         </ol>
                     </nav>
 
-                    <h1 className="display-2">Let's Talk</h1>
+                    <h1 className="display-2">Let&apos;s Talk</h1>
                     <p className="fs-lg pb-4 mb-2 mb-sm-3">
                         Get in touch with us by completing the below form or call us now
                     </p>

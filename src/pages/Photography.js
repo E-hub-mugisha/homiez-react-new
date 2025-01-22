@@ -9,7 +9,7 @@ const Photography = () => {
           <div className="col-lg-6 d-flex flex-column mb-4 mb-lg-0 pb-sm-3 pb-lg-0">
             <h1 className="display-1 text-uppercase fw-bold mt-auto mb-2">Creative <span className="fw-normal">solutions</span> studio<span className="d-none d-md-inline-block align-middle ms-4" style={{ width: '120px', height: '2px', backgroundColor: 'currentColor' }}></span></h1>
             <div className="d-flex align-items-center py-4 py-lg-5">
-              <a className="btn btn-lg btn-primary rounded-0 me-2 me-sm-3" href="#">Let's work together</a>
+              <a className="btn btn-lg btn-primary rounded-0 me-2 me-sm-3" href="#">Let&apos;s work together</a>
               <div className="flex-shrink-sm-0">
                 <img className="d-dark-mode-none" src="assets/img/brands/clutch-rating-dark.svg" width="155" alt="Clutch" />
                 <img className="d-none d-dark-mode-block" src="assets/img/brands/clutch-rating-light.svg" width="155" alt="Clutch" />
@@ -308,7 +308,7 @@ const Photography = () => {
           </div>
 
           <div className="text-center pb-sm-2 pb-md-4 mt-n1 mt-lg-n2">
-            <a className="btn btn-lg btn-outline-dark rounded-0" href="#">Let's work together</a>
+            <a className="btn btn-lg btn-outline-dark rounded-0" href="#">Let&apos;s work together</a>
           </div>
         </div>
       </section>

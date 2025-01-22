@@ -42,7 +42,7 @@ const videography = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <video className="d-block w-100" autoplay loop muted style={{ borderRadius: 'calc(var(--ar-border-radius) * 1.875)' }}>
+                                        <video className="d-block w-100" autoPlay loop muted style={{ borderRadius: 'calc(var(--ar-border-radius) * 1.875)' }}>
                                             <source src="assets/img/landing/marketing-agency/hero/video.mp4" type="video/mp4" />
                                         </video>
                                     </div>
@@ -240,7 +240,7 @@ const videography = () => {
                         <div className="ratio ratio-1x1 position-relative mx-auto mb-3 mb-sm-4" style={{ width: '68px' }}>
                             <i className="ai-search-settings text-primary fs-1 d-flex align-items-center justify-content-center position-absolute start-0"></i>
                             <svg className="position-absolute top-0 start-0 text-primary" width="68" height="68" viewBox="0 0 68 68" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M56.0059 60.5579C44.1549 78.9787 18.0053 58.9081 6.41191 46.5701C-2.92817 35.5074 -2.81987 12.1818 11.7792 3.74605C30.0281 -6.79858 48.0623 7.40439 59.8703 15.7971C71.6784 24.1897 70.8197 37.5319 56.0059 60.5579Z" fill-opacity="0.1"></path>
+                                <path d="M56.0059 60.5579C44.1549 78.9787 18.0053 58.9081 6.41191 46.5701C-2.92817 35.5074 -2.81987 12.1818 11.7792 3.74605C30.0281 -6.79858 48.0623 7.40439 59.8703 15.7971C71.6784 24.1897 70.8197 37.5319 56.0059 60.5579Z" fillOpacity="0.1"></path>
                             </svg>
                         </div>
                         <h3 className="h4 pb-2 mb-1">Online support</h3>
@@ -252,7 +252,7 @@ const videography = () => {
                         <div className="ratio ratio-1x1 position-relative mx-auto mb-3 mb-sm-4" style={{ width: '68px' }}>
                             <i className="ai-bulb-alt text-primary fs-1 d-flex align-items-center justify-content-center position-absolute start-0"></i>
                             <svg className="position-absolute top-0 start-0 text-primary" width="68" height="68" viewBox="0 0 68 68" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M65.0556 29.2672C75.4219 46.3175 48.5577 59.7388 33.8299 64.3181C21.0447 67.5599 1.98006 58.174 0.888673 42.8524C-0.475555 23.7004 18.3473 14.5883 29.9289 8.26059C41.5104 1.93285 52.0978 7.9543 65.0556 29.2672Z" fill-opacity="0.1"></path>
+                                <path d="M65.0556 29.2672C75.4219 46.3175 48.5577 59.7388 33.8299 64.3181C21.0447 67.5599 1.98006 58.174 0.888673 42.8524C-0.475555 23.7004 18.3473 14.5883 29.9289 8.26059C41.5104 1.93285 52.0978 7.9543 65.0556 29.2672Z" fillOpacity="0.1"></path>
                             </svg>
                         </div>
                         <h3 className="h4 pb-2 mb-1">100% guarantee</h3>
@@ -264,7 +264,7 @@ const videography = () => {
                         <div className="ratio ratio-1x1 position-relative mx-auto mb-3 mb-sm-4" style={{ width: '68px' }}>
                             <i className="ai-circle-check-filled text-primary fs-2 d-flex align-items-center justify-content-center position-absolute start-0"></i>
                             <svg className="position-absolute top-0 start-0 text-primary" width="68" height="68" viewBox="0 0 68 68" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.61057 18.2783C10.8205 -1.22686 39.549 7.51899 53.3869 14.3301C64.8949 20.7749 72.2705 40.7038 62.5199 52.5725C50.3318 67.4085 30.4034 61.0689 17.6454 57.6914C4.88745 54.314 1.3482 42.6597 6.61057 18.2783Z" fill-opacity="0.1"></path>
+                                <path d="M6.61057 18.2783C10.8205 -1.22686 39.549 7.51899 53.3869 14.3301C64.8949 20.7749 72.2705 40.7038 62.5199 52.5725C50.3318 67.4085 30.4034 61.0689 17.6454 57.6914C4.88745 54.314 1.3482 42.6597 6.61057 18.2783Z" fillOpacity="0.1"></path>
                             </svg>
                         </div>
                         <h3 className="h4 pb-2 mb-1">Work on time</h3>
@@ -276,7 +276,7 @@ const videography = () => {
                         <div className="ratio ratio-1x1 position-relative mx-auto mb-3 mb-sm-4" style={{ width: '68px' }}>
                             <i className="ai-rocket text-primary fs-2 d-flex align-items-center justify-content-center position-absolute start-0"></i>
                             <svg className="position-absolute top-0 start-0 text-primary" width="68" height="68" viewBox="0 0 68 68" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.34481 53.5078C-7.24653 42.4218 11.4487 18.9206 22.8702 8.55583C33.0946 0.223307 54.3393 0.690942 61.7922 14.1221C71.1082 30.9111 57.886 47.1131 50.0546 57.7358C42.2233 68.3586 30.084 67.3653 9.34481 53.5078Z" fill-opacity="0.1"></path>
+                                <path d="M9.34481 53.5078C-7.24653 42.4218 11.4487 18.9206 22.8702 8.55583C33.0946 0.223307 54.3393 0.690942 61.7922 14.1221C71.1082 30.9111 57.886 47.1131 50.0546 57.7358C42.2233 68.3586 30.084 67.3653 9.34481 53.5078Z" fillOpacity="0.1"></path>
                             </svg>
                         </div>
                         <h3 className="h4 pb-2 mb-1">Free consultation</h3>
@@ -406,7 +406,7 @@ const videography = () => {
             {/*  Testimonials (Slider)  */}
             <section className="container">
                 <div className="card border-0 bg-primary bg-opacity-10 position-relative overflow-hidden">
-                    <svg className="d-block position-absolute top-0 start-0 text-white text-dark-mode-dark" width="125" height="99" viewBox="0 0 125 99" fill="none" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="d-block position-absolute top-0 start-0 text-white text-dark-mode-dark" width="125" height="99" viewBox="0 0 125 99" fill="none" stroke="currentColor" strokeWidth="2" strokeMiterlimit="10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M-17.819-8.269c-.305.249-.567.498-.814.791-1.018 1.172-1.585 2.695-2.08 4.204-4.145 12.479-9.482 29.206-10.223 42.652-.553 10.063 2.516 19.232 8.885 27.317 9.729 12.347 18.367 9.096 32.037 9.887 16.084.937 25.391 8.173 39.497 16.156 13.103 7.426 27.427 6.943 39.163-1.128 13.859-9.521 26.045-30.056 30.495-46.387 4.494-16.493 8.071-34.611.247-51.865-12.273-27.053-55.726-15.233-74.457-11.996-8.827 1.523-17.131 5.829-26.176 6.708-5.73.556-11.547-.527-17.349-.059-5.25.425-14.935.234-19.225 3.72z"></path>
                         <path d="M-3.201 8.561c-.582.923-1.003 1.992-1.28 3.105-2.414 9.594-4.974 20.77-4.552 29.792.175 3.589.945 7.016 2.458 10.282 1.323 2.871 3.127 5.595 5.395 8.188 7.329 8.378 13.801 6.459 23.631 7.162 11.721.849 18.862 5.727 29.143 10.795 9.467 4.658 19.705 3.882 28.285-2.402 10.049-7.323 18.571-22.058 21.581-33.937 3.054-12.054 5.104-25.134-.742-37.438-9.074-19.188-39.54-11.981-53.836-9.828-7.199 1.084-14.979 4.409-22.468 5.463-2.429.337-4.683.483-6.588.469-2.516.234-5.002.601-7.358 1.435C6.499 3.054-.074 4.474-2.692 7.829c-.204.234-.349.483-.509.732z"></path>
                         <path d="M12.237 24.598c-.189.63-.407 1.304-.48 2.007-.625 6.781-.509 12.23 1.12 16.932.625 1.787 1.44 3.545 2.763 5.288 1.134 1.494 2.487 2.944 4.043 4.35 4.915 4.423 9.249 3.823 15.226 4.423 7.344.747 12.303 3.296 18.803 5.419 5.831 1.904 11.983.806 17.393-3.662C77.329 54.2 82.186 45.28 83.771 37.854c1.6-7.617 2.109-15.658-1.745-23.025-5.904-11.293-23.355-8.774-33.229-7.66-5.555.63-12.826 3.047-18.774 4.233-2.283.454-4.203.791-5.41.894a14.19 14.19 0 0 0-5.148 2.973c-2.69 2.432-6.151 5.39-7.082 8.656-.058.234-.087.469-.146.674z"></path>
