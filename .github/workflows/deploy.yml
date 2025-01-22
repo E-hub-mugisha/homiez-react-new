@@ -48,6 +48,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y lftp
           lftp -f "
+          set ssl:verify-certificate no
           open ftp://$CPANEL_USER:$CPANEL_PASSWORD@$CPANEL_HOST
           mirror -R ./build /public_html
           quit
@@ -56,3 +57,5 @@ jobs:
           CPANEL_USER: ${{ secrets.CPANEL_USER }}
           CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
           CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+
+          
