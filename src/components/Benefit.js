@@ -11,7 +11,7 @@ const Benefit = () => {
               <p className="pb-1 pb-md-0 mb-4 mb-md-5">Experience a seamless blend of creativity, technology, and reliability with our comprehensive services.</p>
               <h3 className="mb-4">Get in Touch!</h3>
 
-              <form className="needs-validation row g-4" novalidate="">
+              <form className="needs-validation row g-4" noValidate="">
                 <div className="col-lg-10">
                   <label className="form-label fs-base" htmlFor="name">Name</label>
                   <input className="form-control form-control-lg" type="text" placeholder="Your name" required="" id="name" />

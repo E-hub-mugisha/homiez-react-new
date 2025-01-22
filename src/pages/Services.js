@@ -87,7 +87,7 @@ const Services = () => {
                     </svg>
                     <h3 className="h4">Web Development & IT Support</h3>
                     <p className="mb-0">
-                      From designing stunning websites to ensuring seamless IT operations, we&apos;re here to support your business's digital growth.
+                      From designing stunning websites to ensuring seamless IT operations, we&apos;re here to support your business&apos;s digital growth.
                     </p>
                   </div>
                   <div className="card-footer border-0 pt-3 mb-3">
