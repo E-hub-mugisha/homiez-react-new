@@ -2,12 +2,17 @@
     RewriteEngine On
     RewriteBase /
 
-    # Redirect all traffic to index.html
-    RewriteCond %{REQUEST_URI} !/index\.html$ [NC]
-    RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|js|woff|woff2|ttf|otf|svg|eot)$ [NC]
-    RewriteRule ^.*$ /index.html [R=302,L]
+    # Redirect explicitly typed index.html to root URL
+    RewriteCond %{THE_REQUEST} \s/index\.html [NC]
+    RewriteRule ^index\.html$ / [R=301,L]
 
-    # Allow access to the index page
+    # Redirect all non-file/directory requests to index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.html [L]
+
+    # Set the default directory index
     DirectoryIndex index.html
 </IfModule>
+
 
