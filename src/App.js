@@ -36,7 +36,10 @@ function DynamicTitle() {
 }
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
+    // Initialize AOS for animations
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
@@ -45,10 +48,11 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <>
       <Navbar />
       <DynamicTitle />
-      <Routes>
+      {/* Use location.pathname as the key to force re-render */}
+      <Routes key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -57,11 +61,17 @@ function App() {
         <Route path="/photography" element={<Photography />} />
         <Route path="/videography" element={<Videography />} />
         <Route path="/quote" element={<Quote />} />
-        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
-export default App;
+export default function RootApp() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
