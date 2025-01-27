@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Swiper from "swiper";
+import "swiper/swiper-bundle.css";
 
 const Services = () => {
+  useEffect(() => {
+    new Swiper(".swiper", {
+      spaceBetween: 24,
+      loop: true,
+      autoHeight: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        576: { slidesPerView: 2 },
+        992: { slidesPerView: 3 },
+      },
+    });
+  }, []);
   return (
     <div>
       <section className="container py-5 mt-5 mb-md-3 mb-lg-4 mb-xxl-5">

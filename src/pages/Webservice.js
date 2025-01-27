@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Swiper from "swiper";
+import "swiper/swiper-bundle.css";
 
 const Webservice = () => {
   useEffect(() => {
@@ -8,6 +10,20 @@ const Webservice = () => {
       duration: 1000, // Animation duration in milliseconds
       once: true, // Whether animations should run only once
       easing: "ease-in-out",
+    });
+
+    new Swiper(".swiper", {
+      spaceBetween: 24,
+      loop: true,
+      autoHeight: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        576: { slidesPerView: 3 },
+        992: { slidesPerView: 3 },
+      },
     });
   }, []);
 
@@ -316,13 +332,13 @@ const Webservice = () => {
               <form className="needs-validation row g-4" noValidate>
                 <div className="col-lg-10">
                   <label className="form-label fs-base" htmlFor="name">Name</label>
-                  <input className="form-control form-control-lg" type="text" placeholder="Your name" required id="name"/>
-                    <div className="invalid-feedback">Please enter your name!</div>
+                  <input className="form-control form-control-lg" type="text" placeholder="Your name" required id="name" />
+                  <div className="invalid-feedback">Please enter your name!</div>
                 </div>
                 <div className="col-lg-10">
                   <label className="form-label fs-base" htmlFor="email">Email</label>
-                  <input className="form-control form-control-lg" type="email" placeholder="Email address" required id="email"/>
-                    <div className="invalid-feedback">Please provide a valid email address!</div>
+                  <input className="form-control form-control-lg" type="email" placeholder="Email address" required id="email" />
+                  <div className="invalid-feedback">Please provide a valid email address!</div>
                 </div>
                 <div className="col-lg-10">
                   <label className="form-label fs-base" htmlFor="message">Message</label>
@@ -348,7 +364,7 @@ const Webservice = () => {
                         <path className="text-primary" d="M13.5469 27.0373C21.0277 27.0373 27.0922 20.9848 27.0922 13.5186H13.5469V27.0373Z" fill="currentColor"></path>
                         <path className="text-warning" d="M26.3276 9.03734C24.475 3.77395 19.4522 0 13.5453 0C6.06443 0 0 6.0525 0 13.5187C0 19.4139 3.78139 24.4269 9.05514 26.2758V9.03734H26.3276Z" fill="currentColor"></path>
                       </svg>
-                      <h3 className="h4" style={{ maxWidth: '180px'}}>Work Across Time Zones</h3>
+                      <h3 className="h4" style={{ maxWidth: '180px' }}>Work Across Time Zones</h3>
                       <p className="card-text fs-sm">Seamless communication, no matter where you or your clients are. We operate across all time zones.</p>
                     </div>
                   </div>
@@ -363,7 +379,7 @@ const Webservice = () => {
                         <path className="text-warning" d="M13.2173 26.3746C14.0903 24.3107 15.2282 22.395 16.6119 20.6516C12.48 16.1818 6.56698 13.3827 0 13.3827V36H11.2733C11.2733 32.6628 11.9274 29.4243 13.2173 26.3746Z" fill="currentColor"></path>
                         <path className="text-warning" d="M36.0001 36.0001V13.3828C23.5089 13.3828 13.3828 23.5089 13.3828 36.0001H36.0001Z" fill="currentColor"></path>
                       </svg>
-                      <h3 className="h4" style={{ maxWidth: '180px'}}>Flexible Work Terms</h3>
+                      <h3 className="h4" style={{ maxWidth: '180px' }}>Flexible Work Terms</h3>
                       <p className="card-text fs-sm">We offer flexible work terms, adapting to your schedule htmlFor the best collaboration experience.</p>
                     </div>
                   </div>
@@ -381,7 +397,7 @@ const Webservice = () => {
                         <path className="text-primary" d="M13.5469 27.0373C21.0277 27.0373 27.0922 20.9848 27.0922 13.5186H13.5469V27.0373Z" fill="currentColor"></path>
                         <path className="text-warning" d="M26.3276 9.03734C24.475 3.77395 19.4522 0 13.5453 0C6.06443 0 0 6.0525 0 13.5187C0 19.4139 3.78139 24.4269 9.05514 26.2758V9.03734H26.3276Z" fill="currentColor"></path>
                       </svg>
-                      <h3 className="h4" style={{ maxWidth: '180px'}}>Comprehensive Service</h3>
+                      <h3 className="h4" style={{ maxWidth: '180px' }}>Comprehensive Service</h3>
                       <p className="card-text fs-sm">A full spectrum of services to cater to all your needs in one place.</p>
                     </div>
                   </div>
@@ -395,7 +411,7 @@ const Webservice = () => {
                         <path d="M22.4844 22.4814H36.0031V36.0001H22.4844V22.4814Z" fill="white"></path>
                         <path className="text-warning" d="M8.96266 18C8.96266 13.0088 13.0088 8.96266 18 8.96266C22.9912 8.96266 27.0373 13.0088 27.0373 18H36C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36V27.0373C13.0088 27.0373 8.96266 22.9912 8.96266 18Z" fill="currentColor"></path>
                       </svg>
-                      <h3 className="h4" style={{ maxWidth: '180px'}}>Challenges? We Solve Them</h3>
+                      <h3 className="h4" style={{ maxWidth: '180px' }}>Challenges? We Solve Them</h3>
                       <p className="card-text fs-sm">Nothing is too difficult htmlFor us. We rise to every challenge to bring you the best results.</p>
                     </div>
                   </div>

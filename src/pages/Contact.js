@@ -1,6 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        message: "",
+      });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        // Simulate form submission
+        const isSuccess = Math.random() > 0.5; // Randomly simulate success or error
+        if (isSuccess) {
+          toast.success("Your quote request has been submitted successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            company: "",
+            phone: "",
+            message: "",
+          });
+        } else {
+          toast.error("Something went wrong! Please try again.");
+        }
+      };
     return (
         <div>
             <section className="bg-secondary py-5">
@@ -144,9 +177,10 @@ const Contact = () => {
                 style={{ marginTop: '-260px' }}
                 data-bs-theme="dark"
             >
+                <ToastContainer />
                 <div className="card border-0 bg-primary position-relative py-lg-4 py-xl-5">
                     <div className="card-body position-relative z-2 py-5">
-                        <form className="mx-auto" style={{ maxWidth: '800px' }}>
+                        <form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: '800px' }}>
                             <h2 className="h1 card-title text-center pb-4">
                                 Get a free consultation
                             </h2>
@@ -162,6 +196,9 @@ const Contact = () => {
                                         placeholder="Your name"
                                         required
                                         id="name"
+                                        name='name'
+                                        value={formData.name}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="col-sm-6">
@@ -173,6 +210,10 @@ const Contact = () => {
                                         type="text"
                                         placeholder="Your company name"
                                         id="company"
+                                        name='company'
+                                        value={formData.company}
+                                        onChange={handleChange}
+
                                     />
                                 </div>
                                 <div className="col-sm-6">
@@ -185,6 +226,9 @@ const Contact = () => {
                                         placeholder="Email address"
                                         required
                                         id="email"
+                                        name='email'
+                                        value={formData.email}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="col-sm-6">
@@ -196,6 +240,9 @@ const Contact = () => {
                                         type="text"
                                         placeholder="Phone number"
                                         id="phone"
+                                        name='phone'
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                     />
                                 </div>
                                 <div className="col-sm-12">
@@ -208,6 +255,9 @@ const Contact = () => {
                                         placeholder="Enter your message here..."
                                         required
                                         id="message"
+                                        name='message'
+                                        value={formData.message}
+                                        onChange={handleChange}
                                     ></textarea>
                                 </div>
                                 <div className="col-sm-12">
@@ -216,6 +266,9 @@ const Contact = () => {
                                             className="form-check-input"
                                             type="checkbox"
                                             id="seo"
+                                            name='seo'
+                                            value={formData.seo}
+                                            onChange={handleChange}
                                         />
                                         <label className="form-check-label fs-base" htmlFor="seo">
                                             SEO Website Audit
@@ -226,7 +279,10 @@ const Contact = () => {
                                             className="form-check-input"
                                             type="checkbox"
                                             id="email-marketing"
-                                            defaultChecked
+                                            
+                                            name='email-marketing'
+                                            value={formData.emailMarketing}
+                                            onChange={handleChange}
                                         />
                                         <label
                                             className="form-check-label fs-base"
@@ -240,6 +296,9 @@ const Contact = () => {
                                             className="form-check-input"
                                             type="checkbox"
                                             id="social"
+                                            name='social'
+                                            value={formData.social}
+                                            onChange={handleChange}
                                         />
                                         <label className="form-check-label fs-base" htmlFor="social">
                                             Social Networks
@@ -250,6 +309,9 @@ const Contact = () => {
                                             className="form-check-input"
                                             type="checkbox"
                                             id="content-marketing"
+                                            name='content-marketing'
+                                            value={formData.contentMarketing}
+                                            onChange={handleChange}
                                         />
                                         <label
                                             className="form-check-label fs-base"

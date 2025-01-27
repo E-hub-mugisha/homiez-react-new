@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Hero from '../components/Hero';
 import Clients from '../components/clients';
 import Benefit from '../components/Benefit';
 import Weare from '../components/Weare';
 
 const Home = () => {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Whether animations should run only once
+        easing: "ease-in-out",
+      });
+    }, []);
   return (
     <div>
       <Hero />
@@ -13,14 +22,14 @@ const Home = () => {
 
       <section className="container mt-4">
         <div className="row">
-          <div className="col-lg-4 pb-3 mb-3">
+          <div className="col-lg-4 pb-3 mb-3" data-aos="fade-up">
             <h2 className="h1">Our services</h2>
             <p className="pe-5 mb-0">
               At Homiez, we combine creativity, technology, and expertise to deliver outstanding solutions for your visual and digital needs.
             </p>
           </div>
           <div className="col-lg-8">
-            <div className="row row-cols-1 row-cols-sm-2 g-4">
+            <div className="row row-cols-1 row-cols-sm-2 g-4" data-aos="fade-up" data-aos-delay="100">
               <div className="col">
                 <div className="card border-0 bg-secondary rounded-5 mb-4">
                   <div className="card-body pb-3">
@@ -110,14 +119,13 @@ const Home = () => {
       <section className="position-relative mt-n5 mt-lg-0 mt-4">
         <div className="bg-secondary position-absolute bottom-0 start-0 w-100" style={{ height: 'calc(100% - 3rem)' }}></div>
         <div className="container position-relative z-2">
-          <div className="row">
+          <div className="row" data-aos="fade-up">
             <div className="col-lg-6 py-5 mb-sm-2 mb-md-3 mb-lg-5 mt-3 mt-sm-4 mt-md-5">
               <h2 className="h1 text-center text-lg-start pt-3 mt-3 mb-4">Work with a passionate team</h2>
               <div className="d-flex justify-content-between mx-auto mx-lg-0" style={{ maxWidth: '370px' }}>
                 <ul className="ps-4 me-3">
                   <li className="mt-2">Videographer</li>
                   <li className="mt-2">Photographer</li>
-                  <li className="mt-2"></li>
                 </ul>
                 <ul className="ps-4">
                   <li className="mt-2">Web Developer</li>
