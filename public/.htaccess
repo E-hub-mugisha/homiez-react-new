@@ -13,6 +13,10 @@
 
     # Set the default directory index
     DirectoryIndex index.html
+
+    # Deny access to index.php if it exists
+    <Files "index.php">
+        Order Allow,Deny
+        Deny from all
+    </Files>
 </IfModule>
-
-
