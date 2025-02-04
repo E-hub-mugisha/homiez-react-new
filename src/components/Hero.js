@@ -13,7 +13,7 @@ const Hero = () => {
               <div className="parallax mx-auto mx-lg-0" style={{ maxWidth: '582px' }}>
                 <div className="parallax-layer z-3" data-depth="0.1">
                   <div className="position-relative bg-dark mx-auto" style={{
-                    maxWidth: '61%',
+                    // maxWidth: '61%',
                     padding: '.3125rem',
                     marginBottom: '9.9%',
                     borderRadius: 'calc(var(--ar-border-radius) * 2.125)',
@@ -35,15 +35,15 @@ const Hero = () => {
                         </div>
                       </div>
                       <div className="d-flex align-items-center">
-                        <img className="rounded-circle" src="assets/img/landing/marketing-agency/hero/avatar.jpg" width="35" alt="Avatar" />
+                        <img className="rounded-circle" src="assets/img/homiez.png" width="35" alt="homiez" />
                         <div className="fs-xs ps-2" data-bs-theme="light">
-                          <span className="text-nav fw-bold me-1">Lonoi@1</span>
+                          <span className="text-nav fw-bold me-1">HOMIEZ</span>
                           <span className="text-body-secondary">12 min</span>
                         </div>
                       </div>
                     </div>
                     <video className="d-block w-100" autoPlay loop muted style={{ borderRadius: 'calc(var(--ar-border-radius) * 1.875)' }}>
-                      <source src="assets/img/landing/marketing-agency/hero/video.mp4" type="video/mp4" />
+                      <source src="assets/img/hero/timelapse.mp4" type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -62,15 +62,15 @@ const Hero = () => {
               </div>
             </div>
             <div className="col-lg-6 text-center text-lg-start">
-              <h1 className="display-2 pb-3 mb-4"><span className="fw-normal">Full servises</span> marketing agency</h1>
-              <div className="row row-cols-3">
+              <h1 className="display-2 pb-3 mb-4"><span className="fw-normal text-white">Re-imagining the power</span> <span style={{ color: '#e92b2b', fontWeight: 'bold' }}>of visual content.</span></h1>
+              <div className="row row-cols-3 text-white">
                 <div className="col">
                   <i className="ai-bulb-alt d-block fs-1 text-dark mb-2 pb-1"></i>
-                  <p className="mb-0">Individual approach to the brand</p>
+                  <p className="mb-0">Be smart with Us</p>
                 </div>
                 <div className="col">
                   <i className="ai-rocket d-block fs-2 text-dark mb-3"></i>
-                  <p className="mb-0">We guarantee the result after a month</p>
+                  <p className="mb-0">make a great move with our services.</p>
                 </div>
                 <div className="col">
                   <i className="ai-circle-check-filled d-block fs-3 text-dark mb-3"></i>
@@ -78,7 +78,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="d-sm-flex justify-content-center justify-content-lg-start pt-5 mt-lg-2">
-                <a className="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1" href="#">Get in touch</a>
+                <a className="btn btn-lg btn-primary w-100 w-sm-auto mb-2 mb-sm-0 me-sm-1" href="/contact">Get in touch</a>
                 <a className="btn btn-lg btn-link" href="#">
                   Our case studies
                   <i className="ai-arrow-right ms-2"></i>

@@ -55,13 +55,13 @@ const Webservice = () => {
           <div className="container position-relative z-2 pt-xl-4 pt-xxl-5 pb-sm-2">
             <div className="row pt-md-3 pt-lg-5">
               <div className="col-lg-6 col-xxl-5 pb-lg-5 mb-xl-5">
-                <h1 className="display-1 text-center text-lg-start mb-xxl-5">
+                <h1 className="display-1 text-center text-lg-start mb-xxl-5 text-white">
                   Web studio of effective{" "}
-                  <span className="text-primary">development</span>
+                  <span style={{ color: '#e92b2b', fontWeight: 'bold' }}>development</span>
                 </h1>
               </div>
               <div className="col-lg-5 col-xl-4 offset-lg-1 offset-xxl-2 d-flex flex-column pt-2 pt-md-4">
-                <p className="text-body fs-xl text-center text-lg-start pb-2 pb-md-0 mb-4 mb-md-5">
+                <p className= "fs-xl text-white text-center text-lg-start pb-2 pb-md-0 mb-4 mb-md-5">
                   We build websites, tools, and applications that offer beautiful
                   web presence and ultimate user experience.
                 </p>
@@ -81,12 +81,12 @@ const Webservice = () => {
                   </a>
                 </div>
                 <ul className="list-inline d-xl-flex text-center text-lg-start mt-auto mb-0 mb-sm-2">
-                  <li className="d-inline-flex align-items-center text-body text-nowrap pt-1 me-4">
-                    <i className="ai-check-alt text-primary fs-xl me-2"></i>
-                    Full spectrum of services
+                  <li className="d-inline-flex align-items-center text-nowrap pt-1 me-4">
+                    <i className="ai-check-alt text-white fs-xl me-2"></i>
+                    make a great move with our services.
                   </li>
-                  <li className="d-inline-flex align-items-center text-body text-nowrap pt-1">
-                    <i className="ai-check-alt text-primary fs-xl me-2"></i>
+                  <li className="d-inline-flex align-items-center text-nowrap pt-1">
+                    <i className="ai-check-alt text-white fs-xl me-2"></i>
                     Flexible work terms
                   </li>
                 </ul>
@@ -96,31 +96,6 @@ const Webservice = () => {
         </div>
       </section>
 
-      {/* Awards Section */}
-      <section
-        className="container pb-5 pt-lg-3 pt-xl-4 pt-xxl-5 mt-n2 mt-md-0"
-        data-aos="fade-up"
-      >
-        <div className="row justify-content-center row-cols-2 row-cols-3 row-cols-md-5 gx-0 gx-sm-3 gx-md-2 gx-lg-3 gx-xl-4">
-          <div className="col">
-            <div className="py-sm-2 my-xl-1">
-              <img
-                className="d-block d-dark-mode-none mx-auto"
-                src="assets/img/brands/clutch-rating-dark.svg"
-                width="196"
-                alt="Clutch"
-              />
-              <img
-                className="d-none d-dark-mode-block mx-auto"
-                src="assets/img/brands/clutch-rating-light.svg"
-                width="196"
-                alt="Clutch"
-              />
-            </div>
-          </div>
-          {/* Repeat similar award blocks here */}
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="container pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5 mt-xxl-4 pb-lg-2 pb-xl-4 pb-xxl-5">
@@ -246,23 +221,16 @@ const Webservice = () => {
           <div className="col-md-7 col-lg-6 mb-4 mb-md-0">
             <a className="d-block position-relative" href="portfolio-single-v1.html">
               <div className="bg-info rounded-5 position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="250"></div>
-              <img className="d-block position-relative z-2 mx-auto" src="assets/img/portfolio/list/06.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250" />
+              <img className="d-block position-relative z-2 mx-auto" src="assets/img/portfolio/web/connector.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250" />
             </a>
           </div>
           <div className="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
             <div className="ps-md-3 ps-lg-0">
               <img className="d-block d-dark-mode-none mb-2 mb-lg-3" src="assets/img/portfolio/brands/champion-blue-dark.svg" alt="Champion" />
               <img className="d-none d-dark-mode-block mb-2 mb-lg-3" src="assets/img/portfolio/brands/champion-blue-light.svg" alt="Champion" />
-              <h2 className="h4">Development of an application htmlFor a national bank</h2>
-              <p className="fs-sm pb-3 pb-lg-4 mb-3">Morbi et massa fames ac scelerisque sit commodo dignissim faucibus vel quisque proin lectus. Morbi et massa fames ac scelerisque sit commodo dignissim.</p>
+              <h2 className="h4">connector online booking system and management tool designed to help service providers</h2>
+              <p className="fs-sm pb-3 pb-lg-4 mb-3">We are an online booking system and management tool designed to help service providers to control, run, grow and manage their business better while customers find & book their favorite services online no matter where they are or when they want to book. </p>
               <a className="btn btn-sm btn-outline-dark rounded-pill" href="portfolio-single-v1.html">Read the full story</a>
-              <div className="d-flex align-items-center pt-2 pt-lg-3 mt-3">
-                <h6 className="text-body mb-0 me-3">Awards:</h6>
-                <img className="d-block d-dark-mode-none me-4" src="assets/img/portfolio/brands/vuejs-dark.svg" width="90" alt="Vue.js" />
-                <img className="d-none d-dark-mode-block me-4" src="assets/img/portfolio/brands/vuejs-light.svg" width="90" alt="Vue.js" />
-                <img className="d-block d-dark-mode-none" src="assets/img/portfolio/brands/deloitte-dark.svg" width="95" alt="Deloitte" />
-                <img className="d-none d-dark-mode-block" src="assets/img/portfolio/brands/deloitte-light.svg" width="95" alt="Deloitte" />
-              </div>
             </div>
           </div>
         </div>
@@ -272,14 +240,14 @@ const Webservice = () => {
           <div className="col-md-7 col-lg-6 mb-4 mb-md-0">
             <a className="d-block position-relative" href="portfolio-single-v1.html">
               <div className="bg-primary rounded-5 position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="250"></div>
-              <img className="d-block position-relative z-2 mx-auto" src="assets/img/portfolio/list/07.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250" />
+              <img className="d-block position-relative z-2 mx-auto" src="assets/img/portfolio/web/healthy.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250" />
             </a>
           </div>
           <div className="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
             <div className="ps-md-3 ps-lg-0">
               <img className="d-block mb-2 mb-lg-3" src="assets/img/portfolio/brands/foster-green.svg" alt="Foster" />
-              <h2 className="h4">Design and development of a dashboard htmlFor data management</h2>
-              <p className="fs-sm pb-3 pb-lg-4 mb-3">Feugiat elit tempor, malesuada rutrum amet quis duis facilisi viverra. Quam ut in gravida dignissim eget mauris pretium facilisi dui varius amet et quam massa auctor.</p>
+              <h2 className="h4">The Healthy Living Organization (HLO) </h2>
+              <p className="fs-sm pb-3 pb-lg-4 mb-3">The Healthy Living Organization (HLO) is a reputable non-profit organization dedicated to promoting health and well-being in communities.</p>
               <a className="btn btn-sm btn-outline-dark rounded-pill" href="portfolio-single-v1.html">Read the full story</a>
             </div>
           </div>
@@ -290,7 +258,7 @@ const Webservice = () => {
           <div className="col-md-7 col-lg-6 mb-4 mb-md-0">
             <a className="d-block position-relative" href="portfolio-single-v1.html">
               <div className="bg-danger rounded-5 position-absolute top-0 start-0 w-100 h-100" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="250"></div>
-              <img className="d-block position-relative z-2 ms-auto" src="assets/img/portfolio/list/08.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250" />
+              <img className="d-block position-relative z-2 ms-auto" src="assets/img/portfolio/web/rncda.png" width="636" alt="Image" data-aos="fade-in" data-aos-duration="400" data-aos-offset="250" />
             </a>
           </div>
           <div className="col-md-5 col-xl-4 offset-lg-1" data-aos="fade-up" data-aos-duration="400" data-aos-offset="170">
@@ -422,7 +390,25 @@ const Webservice = () => {
           </div>
         </div>
       </section>
-
+      
+      <section className="bg-primary py-5" data-bs-theme="dark">
+        <div className="container pt-lg-2 pt-xl-4 pt-xxl-5 pb-1 pb-sm-3">
+          <div className="row pt-sm-3 pt-md-4">
+            <div className="col-md-6 col-xl-5 offset-xl-1">
+              <h2 className="display-3">Ready to take your online presence to the next level?</h2>
+            </div>
+            <div className="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
+              <p className="text-body fs-xl pb-4 mb-2 mb-lg-3">At Homiez, we combine creativity, technology, and expertise to deliver outstanding solutions for your visual and digital needs.</p>
+              <button className="btn btn-danger" type="button">Book a call</button>              
+            </div>
+          </div>
+          <div className="d-none d-md-block text-center mt-n5">
+            <svg className="text-danger ms-lg-5" width="171" height="97" viewBox="0 0 171 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M169.319 54.333C162.404 55.9509 155.712 58.0764 149.09 60.6764L149.07 60.6761C148.967 60.7158 148.863 60.7554 148.76 60.7951C147.3 61.3811 148.325 63.4238 149.672 63.2067C154.548 62.4134 159.994 59.8725 164.87 59.0792C148.278 73.1339 129.684 89.2549 107.779 92.6402C85.6981 96.0539 65.5665 86.7839 56.8768 66.9865C70.9662 55.0671 79.2106 35.6614 79.0299 17.6457C78.9484 10.3157 76.1485 -3.36373 65.7068 1.21851C55.8557 5.53146 52.0466 22.5213 50.5736 31.7739C48.7364 43.2858 49.7593 55.5291 53.8643 66.2014C52.787 67.0812 51.6907 67.8989 50.5755 68.6546C40.6328 75.3851 27.1039 78.8929 16.4487 72.0362C2.91045 63.3259 1.93984 44.9485 1.56902 30.4091C1.54778 29.6265 0.359869 29.6092 0.360624 30.3915C0.322634 44.0809 0.835929 59.065 10.5664 69.6857C18.5722 78.4182 30.4315 79.7753 41.3346 75.9924C46.2437 74.2834 50.7739 71.7557 54.8581 68.6348C59.9738 80.2586 68.9965 89.6956 82.2735 93.7393C113.474 103.223 141.744 83.0494 164.903 63.697L161.901 71.0334C161.267 72.5887 163.76 73.2736 164.393 71.7389C165.986 67.8713 167.569 63.9933 169.152 60.1359C169.288 60.0247 169.695 58.6127 169.821 58.491C170.122 57.1161 169.152 60.1359 169.851 58.4169C170.189 57.6087 170.517 56.79 170.855 55.9818C171.248 54.9994 170.185 54.1192 169.319 54.333ZM54.3624 59.8578C51.4872 49.1623 51.6051 37.5841 54.2025 26.8039C55.5185 21.3369 57.4405 15.8066 60.1572 10.8541C61.2311 8.89354 62.5139 6.77134 64.2307 5.31421C69.4231 0.902277 74.3649 4.80357 75.8002 10.4446C80.5272 28.9489 70.1806 51.6898 55.8431 64.5114C55.2971 63.0109 54.793 61.4698 54.3624 59.8578Z"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

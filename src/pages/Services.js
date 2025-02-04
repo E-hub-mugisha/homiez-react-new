@@ -52,7 +52,7 @@ const Services = () => {
                     </p>
                   </div>
                   <div className="card-footer border-0 pt-3 mb-3">
-                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="#" aria-label="Learn more">
+                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="/videography" aria-label="Learn more">
                       <i className="ai-arrow-right"></i>
                     </a>
                   </div>
@@ -70,7 +70,7 @@ const Services = () => {
                     </p>
                   </div>
                   <div className="card-footer border-0 pt-3 mb-3">
-                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="#" aria-label="Learn more">
+                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="/photography" aria-label="Learn more">
                       <i className="ai-arrow-right"></i>
                     </a>
                   </div>
@@ -90,7 +90,7 @@ const Services = () => {
                     </p>
                   </div>
                   <div className="card-footer border-0 pt-3 mb-3">
-                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="#" aria-label="Learn more">
+                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="/web-services" aria-label="Learn more">
                       <i className="ai-arrow-right"></i>
                     </a>
                   </div>
@@ -108,7 +108,7 @@ const Services = () => {
                     </p>
                   </div>
                   <div className="card-footer border-0 pt-3 mb-3">
-                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="#" aria-label="Learn more">
+                    <a className="btn btn-icon btn-lg btn-outline-primary rounded-circle stretched-link" href="/web-services" aria-label="Learn more">
                       <i className="ai-arrow-right"></i>
                     </a>
                   </div>

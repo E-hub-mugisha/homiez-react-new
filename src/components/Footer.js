@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -27,17 +26,17 @@ const Footer = () => {
                         </div>
                         <div className="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
                             <ul className="nav flex-column">
-                                <li><Link className="nav-link py-1 px-0" to="/services">Services</Link></li>
-                                <li><Link className="nav-link py-1 px-0" to="/about">About</Link></li>
-                                <li><Link className="nav-link py-1 px-0" to="/portfolio">Portfolio</Link></li>
-                                <li><Link className="nav-link py-1 px-0" to="/contact">Contacts</Link></li>
+                                <li><a className="nav-link py-1 px-0" href="/services">Services</a></li>
+                                <li><a className="nav-link py-1 px-0" href="/about">About</a></li>
+                                <li><a className="nav-link py-1 px-0" href="/portfolio">Portfolio</a></li>
+                                <li><a className="nav-link py-1 px-0" href="/contact">Contacts</a></li>
                             </ul>
                         </div>
                         <div className="col-sm-4 col-lg-2 mb-4 mb-sm-0">
                             <ul className="nav flex-column">
-                                <li><a className="nav-link py-1 px-0" href="mailto:contact@example.com">contact@example.com</a></li>
-                                <li><a className="nav-link py-1 px-0" href="tel:+15262200459">+1&nbsp;526&nbsp;220&nbsp;0459</a></li>
-                                <li><a className="nav-link py-1 px-0" href="tel:+15262200444">+1&nbsp;526&nbsp;220&nbsp;0444</a></li>
+                                <li><a className="nav-link py-1 px-0" href="mailto:info@homiez.rw">info@homiez.rw</a></li>
+                                <li><a className="nav-link py-1 px-0" href="tel:+250789963931">+250&nbsp;789&nbsp;963&nbsp;931</a></li>
+                                <li><a className="nav-link py-1 px-0" href="tel:+250782390919">+250&nbsp;782&nbsp;390&nbsp;919</a></li>
                             </ul>
                         </div>
                         <div className="col-sm-5 col-lg-4 col-xl-3 offset-lg-1">
